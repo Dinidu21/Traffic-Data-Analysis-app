@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Traffic Analysis Results</title>
+<link rel="stylesheet" href="/static/css/styles.css"></head>
+<body class="results-body">
+<div class="results-container">
+    <h1>Traffic Analysis Results</h1>
+    <div class="result-row">
+        <span class="result-key">Data File</span>
+        <span class="result-value">{{ outcomes['Data File'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Total Vehicles Recorded</span>
+        <span class="result-value">{{ outcomes['Total Vehicles'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Total Trucks</span>
+        <span class="result-value">{{ outcomes['Total Trucks'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Total Electric Vehicles</span>
+        <span class="result-value">{{ outcomes['Total Electric Vehicles'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Total Two-Wheeled Vehicles</span>
+        <span class="result-value">{{ outcomes['Two-Wheeled Vehicles'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Buses North from Elm Avenue/Rabbit Road</span>
+        <span class="result-value">{{ outcomes['Buses North'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Vehicles Through Both Junctions Without Turning</span>
+        <span class="result-value">{{ outcomes['Straight Through'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Truck Percentage</span>
+        <span class="result-value">{{ outcomes['Truck Percentage'] }}%</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Average Bicycles Per Hour</span>
+        <span class="result-value">{{ outcomes['Average Bicycles Per Hour'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Vehicles Over Speed Limit</span>
+        <span class="result-value">{{ outcomes['Over Speed Limit'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Vehicles at Elm Avenue/Rabbit Road</span>
+        <span class="result-value">{{ outcomes['Elm Ave Rabbit Road'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Vehicles at Hanley Highway/Westway</span>
+        <span class="result-value">{{ outcomes['Hanley Highway Westway'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Scooter Percentage at Elm Avenue/Rabbit Road</span>
+        <span class="result-value">{{ outcomes['Scooter Percentage'] }}%</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Highest Number of Vehicles in an Hour on Hanley Highway/Westway</span>
+        <span class="result-value">{{ outcomes['Highest Hourly Count'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Most Vehicles Recorded on Hanley Highway/Westway</span>
+        <span class="result-value">{{ outcomes['Most Vehicles Hour'] }}</span>
+    </div>
+
+    <div class="result-row">
+        <span class="result-key">Total Rainy Hours</span>
+        <span class="result-value">{{ outcomes['Rain Hours'] }}</span>
+    </div>
+
+    <div class="button-container">
+        <button class="again-button" onclick="window.location.href = '/';">Again</button>
+    </div>
+
+</div>
+</body>
+</html>

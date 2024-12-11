@@ -1,0 +1,7 @@
+.vercel
+.venv
+
+# Directories
+build
+dist
+
