@@ -22,15 +22,6 @@ ensure_upload_folder_exists()
 def static_files(filename):
     return send_from_directory('static', filename)
 
-# In the submit route, add a function to check the CSV structure
-def validate_csv(file):
-    try:
-        with open(file, mode='r') as f:
-            reader = csv.DictReader(f)
-            return list(reader)[:5]  # return the first 5 rows for preview
-    except Exception as e:
-        return None
-
 # Function to process the CSV file
 def process_csv_data(file_name, day, month, year):
     print(f"Processing {file_name}")
