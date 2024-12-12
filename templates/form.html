@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traffic Data Analysis Program</title>
-<link rel="stylesheet" href="/static/css/styles.css">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="/static/js/scripts.js"></script>
+    <title>Traffic Data Analysis</title>
+    <link rel="icon" type="image/png" href="/static/images/traffic-icon.png">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/static/js/scripts.js"></script>
 </head>
 <body>
-    <form action="/submit" method="POST" enctype="multipart/form-data" id="uploadForm">
-        <label for="file">CSV File:</label>
-        <input type="file" id="file" name="file" accept=".csv" required><br><br>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+        <form action="/submit" method="POST" enctype="multipart/form-data" id="uploadForm">
+            <h1>Traffic Data Analyzer</h1>
+
+            <label for="file">Upload Traffic CSV File</label>
+            <input type="file" id="file" name="file" accept=".csv" required>
+
+            <div class="file-info">
+                <p>Accepted file types: .csv</p>
+                <p>Max file size: 10MB</p>
+            </div>
+
+            <button type="submit">Analyze Traffic Data</button>
+        </form>
+    </div>
 </body>
 </html>
