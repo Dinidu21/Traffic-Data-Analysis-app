@@ -1,4 +1,5 @@
 # Traffic Data Analysis Web Application
+![image](https://github.com/user-attachments/assets/82cac074-05be-4a9f-929d-ec0df80a31f7)
 
 ## Deployment Instructions for Vercel
 
